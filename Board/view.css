@@ -1,0 +1,55 @@
+/* view.css */
+.nt_font * {
+    font-family: "Noto Sans KR", sans-serif;
+}
+body {
+    background-color: #f8f9fa;
+}
+
+/* 별점 */
+.star-rating {
+    color: #ffc107;
+    font-size: 14px;
+}
+
+/* 리뷰 이미지 */
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px; /* 텍스트 영역과 동일한 최소 높이 */
+}
+
+/* 리뷰 내용 */
+.review-content {
+    line-height: 1.8;
+    font-size: 16px;
+    min-height: 300px;
+    height: 100%;
+    width: 100%;
+}
+.review-content p {
+    margin: 0;
+}
+.review-content img {
+    border: 1px solid #dee2e6;
+}
+
+/* 관련 리뷰 호버 */
+.related-reviews .border-bottom:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+/* 이미지 호버 효과 */
+.review-content img:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.productN{
+	background-color:	rgb(2, 167, 225);
+	color: #fff;
+	border-radius: 4px;
+}

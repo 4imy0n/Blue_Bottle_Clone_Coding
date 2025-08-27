@@ -1,0 +1,142 @@
+.img-box {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  position: relative;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.img-box:hover {
+  border-color: #007bff;
+  background-color: #f0f8ff;
+}
+
+.img-box img{
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.img-box #no-image-text {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* 이미지 제거 버튼 */
+.img-remove-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 14px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.img-remove-btn:hover {
+  background: rgba(220, 53, 69, 1);
+}
+
+.img-box:hover .img-remove-btn {
+  display: flex;
+}
+
+/* 별점 */
+.rating-input {
+  display: flex;
+  flex-direction: row-reverse; /* 순서 뒤집기 */
+  gap: 5px;
+  align-items: center
+}
+
+.rating-input input[type="radio"] {
+  display: none;
+}
+
+.rating-input .star {
+  font-size: 2rem;
+  color: #ddd;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* 체크된 별과 그 뒤의 모든 별들 노란색 */
+.rating-input input[type="radio"]:checked ~ label {
+  color: #ffd700;
+}
+
+/* 호버 효과 */
+.rating-input label:hover,
+.rating-input label:hover ~ label {
+  color: #ffd700;
+}
+
+.editor p {
+  margin: 0;
+}
+.editor {
+  border: 1px solid #bbb;
+  padding: 15px;
+  border-radius: 4px;
+  line-height: 1.6;
+}.editor.empty::before {
+  content: attr(data-placeholder);
+  color: #999;
+  white-space: pre-line;
+  pointer-events: none;
+  position: absolute;
+}
+
+#colorButton {
+  position: relative;
+}
+#colorBox {
+  display: none;
+  position: absolute;
+  background: #535353;
+  left : 0;
+  padding: 10px;
+  z-index: 9999;
+  width: 220px;
+}
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+.color-box {
+  width: 100%;
+  height: 25px;
+  cursor: pointer;
+}
+
+.submitBtn{
+  background-color:	rgb(2, 167, 225);
+  color: #fff;
+  border:none;
+}.submitBtn:hover {
+  background-color:	rgb(1, 139, 188);
+  color: #fff;
+  border:none;
+}
+}
